@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcefee;
+    text-align: center;
+  }
+  #heart {
+    font-size: 100px;
+    color: red;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  #loginForm {
+    display: none;
+  }
+  #loginForm input[type="text"],
+  #loginForm input[type="password"] {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  #loginForm input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #mediaFiles {
+    display: none;
+  }
+  #mediaFiles img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  #mediaFiles h2, #mediaFiles h3 {
+    margin-top: 20px;
+  }
+  #mediaFiles video {
+    margin: 20px auto;
+    display: block;
+  }
+  .photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+</style>
+</head>
+<body>
+
+<div id="heart">&#10084;</div>
+
+<div id="loginForm">
+  <h2>Happy Birthday Bibi ji ❤️</h2>
+  
+  <form id="myForm">
+    <input type="text" id="username" name="Husband name" placeholder="Husband name"><br>
+    <input type="password" id="password" name="wife name" placeholder="wife name"><br>
+    <input type="submit" value="Login">
+  </form>
+</div>
+
+<div id="mediaFiles" style="display: none;">
+  <h2> Welcome in my Heart ❤️</h2>
+  <h4>Zindagi ki har pal, har khushi, har muskurahat tumhare sath hoti hai. Tum meri duniya ho, aur aaj, tumhari khushiyan meri khushiyan hain. Tumhare janamdin par, main sirf itna kehna chahta hoon - tum meri zindagi mein ek anmol gehna ho, jise har pal sambhal kar rakhoonga. Tumhare sath bitaye har lamhe ne mujhe pyaar aur khushi ka ehsaas karaya hai. Janamdin mubarak ho, meri pyaari si jaan! 🎉❤️</h4>
+    <h2> This website is designed just for you because you are the heartbeat💓 of this heart.️</h2>
+	<h2> I LOVE YOU SWEETHEART ❤️</h2>
+	 <img src="photo 1.jpg" alt="Photo 1">
+  <img src="photo 2.jpg" alt="Photo 2">
+   <img src="photo 3.jpg" alt="Photo 3">
+  <img src="photo 4.jpg" alt="Photo 4"> 
+  <img src="photo 5.jpg" alt="Photo 5">
+  <img src="photo 6.jpg" alt="Photo 6"> 
+  <img src="photo 7.jpg" alt="Photo 7">
+  <img src="photo 8.jpg" alt="Photo 8">
+     <img src="photo 9.jpg" alt="Photo 9">
+   <img src="photo 10.jpg" alt="Photo 10">
+  <img src="photo 11.jpg" alt="Photo 11">
+   <img src="photo 12.jpg" alt="Photo 12">
+  <img src="photo 13.jpg" alt="Photo 13">
+  <!-- Add more photos as needed -->
+
+  <h3>Videos:</h3>
+  <video width="320" height="240" controls>
+    <source src="video 5.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video width="320" height="240" controls>
+    <source src="video 1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+   <video width="320" height="240" controls>
+    <source src="video 2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+   <video width="320" height="240" controls>
+    <source src="video 3.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Add more videos as needed -->
+  <!-- Include your media files here -->
+</div>
+
+<script>
+  var heart = document.getElementById('heart');
+  var loginForm = document.getElementById('loginForm');
+  var mediaFiles = document.getElementById('mediaFiles');
+
+  heart.addEventListener('click', function() {
+    loginForm.style.display = 'block';
+  });
+
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    if (username === 'vishnu' && password === 'shweta') {
+      loginForm.style.display = 'none';
+      mediaFiles.style.display = 'block';
+    } else {
+      alert('Invalid username or password');
+    }
+  });
+</script>
+
+</body>
+</html>
